@@ -1,0 +1,79 @@
+.container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nadpis {
+    color: white;
+    letter-spacing: 0.10em;
+}
+  
+.form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.input{
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.button {
+    width: 300px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.button:hover {
+    transition: 0.5s;
+    color: black;
+    letter-spacing: 0.15em;
+    background: aqua;
+    box-shadow: 0 0 35px aqua;
+}
+
+.registrace {
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.registrace h1 {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.registraceLink {
+    font-size: 15px;
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
+.registraceLink:hover {
+    color: aqua;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    transition: 0.4s;
+}

@@ -1,0 +1,181 @@
+.container {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0px 5%;
+
+    background: linear-gradient(#383838,#7a7a7a);
+}
+
+.mainResponsibilita {
+    height: 200px;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.responsibilita1 {
+    width: 48vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.responsibilita2 {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 {
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1Box {
+    width: 25vw;
+}
+
+.section2 {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2Box{
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.section3 {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section3Box{
+    width: 17vw;
+}
+
+.section4 {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section4Box{
+    width: 17vw;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        height: 450px;
+    }
+
+    .mainResponsibilita {
+        flex-direction: column;
+        align-items: start;
+        height: 350px;
+        width: 90%;
+        margin: 0;
+    }
+
+    .responsibilita1 {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .responsibilita2 {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .section1 {
+        height: 170px;
+        width: 45%;
+        justify-content: center;
+        align-items: start;
+    }
+    .section1Box {
+        width: 90%;
+    }
+
+    .section2 {
+        height: 170px;
+        width: 45%;
+        justify-content: center;
+        align-items: start;
+    }
+    .section2Box {
+        width: 90%;
+    }
+
+    .section3 {
+        height: 170px;
+        width: 45%;
+        justify-content: center;
+        align-items: start;
+    }
+    .section3Box {
+        width: 90%;
+    }
+
+    .section4 {
+        height: 170px;
+        width: 45%;
+        justify-content: center;
+        align-items: start;
+    }
+    .section4Box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        height: 700px;
+    }
+
+    .mainResponsibilita {
+        height: 100%;
+    }
+
+    .responsibilita1 {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 50%;
+    }
+    .responsibilita2 {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 50%;
+    }
+
+    .section1 {
+        height: 50%;
+        width: 100%;
+    }
+    .section2 {
+        height: 50%;
+        width: 100%;
+    }
+    .section3 {
+        height: 50%;
+        width: 100%;
+    }
+    .section4 {
+        height: 50%;
+        width: 100%;
+    }
+}
