@@ -33,10 +33,10 @@
     width: 300px;
     padding: 20px;
     cursor: pointer;
-    background-color: blue;
+    background-color: aqua;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: black;
     font-size: 15px;
     font-weight: bold;
     transition: 0.5s;

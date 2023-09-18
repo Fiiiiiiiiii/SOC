@@ -28,7 +28,6 @@ const Prihlaseni = () => {
               <h1>Nemáte účet?</h1>
               <Link href="/dashboard/registrace" className={styles.registraceLink}>Vytvořte si ho!</Link>
           </div>
-
         </form>
 
     </div>

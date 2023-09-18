@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Dum from "public/Dům.jpg"
+import Pocitac from "public/Pocitac3.jpg"
 import Link from 'next/link'
 import Button from "@/components/Button/Button"
 import Button2 from "@/components/Button2/Button2"
+import Canvas from '@/components/Canvas/Canvas'
+import CanvasHeader from '@/components/Canvas/CanvaHeader'
 
 export default function Home() {
 
@@ -12,7 +14,6 @@ export default function Home() {
 
         <div className={styles.uvod}>
 
-            <Image src={Dum} alt="" className={styles.img}/>
 
             <div className={styles.nadpisHlavni}>
 
@@ -26,6 +27,18 @@ export default function Home() {
 
             </div>
 
+            <div className={styles.frame}>
+                <Image src={Pocitac} alt="" className={styles.img}/>
+            </div>
+
+
+        </div>
+
+        <div className={styles.nadAnimace}>
+            <div className={styles.animace}>
+                <CanvasHeader/>
+                <Canvas/>
+            </div>
         </div>
 
         <div className={styles.section}>
@@ -39,7 +52,7 @@ export default function Home() {
 
             <div className={styles.section2}>
 
-                <div className={styles.section2Text}>Staň se jeden z nás</div>
+                <div className={styles.section2Text}>Staň se jedním z nás</div>
 
                 <div className={styles.section2Main}>
 

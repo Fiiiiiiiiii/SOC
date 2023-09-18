@@ -2,44 +2,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eee;
+  background-color: transparent;
 }
 
 /*---Úvod---*/
 
 .uvod {
-  height: 950px;
-}
-
-.img {
-  height: 950px;
-  width: 100vw;
-  object-fit: cover;
-  opacity: 1;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 870px);
+  position: absolute;
+  height: 100vh;
+  width: 85vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .nadpisHlavni {
-  position: absolute;
-  top: 40%;
-  left: 10vw;
+  margin-top: 30vh;
 }
 
 .nadpis {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 760px;
-  height: 220px;
+  width: 600px;
+  height: 160px;
   transform: skew(-20deg);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(54, 54, 54, 0.5);
   transition: 0.3s ease-out;
 }
 
 .nadpisText {
   transform: skew(20deg);
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
   transition: 0.3s ease-out;
 }
@@ -49,14 +44,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 760px;
+  width: 600px;
   height: 50px;
   transform: skew(20deg);
   margin-top: 20px;
-
+  
   /*animace*/
   /*vysvětlení: background je na 200%, takže tam narvu 2 barvy pomocí linear-gradient a rozdělím to na 50% a 50%. Když na to najedu tak se to posune do leva a ta transition je tam, aby to bylo plynulý*/
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.5) 51%, aquamarine 49%) right;
+  background: linear-gradient(to left, rgba(54, 54, 54, 0.5) 51%, rgba(0, 255, 255, 0.8) 49%) right;
   background-size: 205%;
   
   transition: 0.3s ease-out; /*tady to slouží při změnšení pod 950px, 750px ...*/
@@ -68,7 +63,7 @@
 
 .registrace:hover .registraceText{
   transition: all 0.3s ease;
-  color: black;
+  color: rgba(1, 1, 1, 1);
 }
 
 .registraceText {
@@ -77,6 +72,36 @@
   font-size: 20px;
   font-weight: bold;
   transition: 0.3s ease-out; 
+}
+
+.frame {
+  margin-top: 20vh;
+  height: 400px;
+  width: 700px;
+  perspective: 800px;
+}
+
+.img {
+  height: 400px;
+  width: 700px;
+  transition: all 2s ease;
+  animation: animace2 5s ease-in-out infinite;
+}
+
+@keyframes animace2 {
+  0% {
+    transform: rotateY(-27deg);
+  }
+  50% {
+    transform: rotateY(-30deg);
+  }
+  100% {
+    transform: rotateY(-27deg);
+  }
+}
+
+.nadAnimace {
+  height: 100vh;
 }
 
 /*---section---*/
@@ -92,14 +117,15 @@
   justify-content: center;
   gap: 10px;
   padding: 0 5vw;
+  margin-top: 10vh;
 }
 
 .section1 h1 {
-  color: black;
+  color: white;
 }
 
 .section2 {
-  background: linear-gradient(#111,#333);
+  background: #222;
   height: 500px;
   clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 420px);
 
@@ -125,7 +151,7 @@
 .deliciCara {
   height: 250px;
   width: 0px;
-  border-left: 1px solid white;
+  border-left: 1px solid aqua;
   margin-top: 30px;
 }
 
@@ -161,7 +187,7 @@
 
 .section3 {
   height: 150px;
-  color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,16 +200,38 @@
 
 .section4 {
   height: 100px;
-  background: linear-gradient(#303030, #383838);
+  background: #222;
   clip-path: polygon(0 80px, 100% 0, 100% 100%, 0% 100%);
 }
 
 /*Resposibilita*/
 
+@media (max-width: 1500px) {
+
+  .img {
+    display: none;
+  }
+
+  .frame {
+    display: none;
+  }
+
+  .uvod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nadpisHlavni {
+    margin: auto;
+  }
+
+}
+
 @media (max-width: 950px) {
   
   .uvod {
-    position: relative;
+    position: absolute;
     height: 750px;
   }
   
@@ -204,10 +252,10 @@
   
   .nadpis {
     width: 500px;
-    height: 180px;
+    height: 150px;
   }
   .nadpisText {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .registrace {
@@ -243,7 +291,7 @@
   .deliciCara {
     height: 0px;
     width: 80vw;
-    border-top: 1px solid white;
+    border-top: 1px solid aqua;
     margin-top: 0px; /*tohle tam musí být, aby to předsalo*/
   }
 
@@ -260,24 +308,56 @@
 }
 
 @media (max-width: 600px) {
-  
+
   .uvod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
     height: 600px;
+  }
+
+  .frame {
+    margin-top: 0;
+    display: inline-block;
+    height: 200px;
+    width: 400px;
+    perspective: 800px;
   }
   
   .img {
-    height: 600px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 520px);
+    display: flex;
+    height: 200px;
+    width: 400px;
+    transform: rotateX(10deg);
+    animation: animace2 10s linear infinite;
   }
 
-    .nadpisHlavni {
-      width: 100%;
-      left: 0px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  @keyframes animace2 {
+    25% {
+      transform: rotateY(-10deg);
     }
+    50% {
+      transform: rotateX(-10deg);
+    }
+    75% {
+      transform: rotateY(10deg);
+    }
+    100% {
+      transform: rotateX(10deg);
+    }
+  }
+
+  .nadpisHlavni {
+    margin: 0;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .nadpis {
     width: 400px;
@@ -302,12 +382,28 @@
 
 @media (max-width: 450px) {
   .uvod {
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    height: 600px;
+  }
+
+  .frame {
+    margin-top: 0;
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    perspective: 800px;
   }
 
   .img {
-    height: 500px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 420px);
+    display: flex;
+    height: 200px;
+    width: 300px;
+    transform: rotateX(10deg);
+    animation: animace2 10s linear infinite;
   }
 
   .nadpisHlavni {

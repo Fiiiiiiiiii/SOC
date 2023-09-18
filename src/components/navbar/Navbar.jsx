@@ -16,6 +16,12 @@ const Navbar = () => {
 
     
         <div className={styles.container}>
+
+            
+            <div className={styles.trojuhelnik1}></div>
+            <div className={styles.trojuhelnik2}></div>
+            <div className={styles.trojuhelnik3}></div>
+            <div className={styles.trojuhelnikLogo}>Logo</div>
           
             <Link href="/"  className={styles.logo}>Název/Logo</Link>
 
@@ -36,6 +42,11 @@ const Navbar = () => {
 
         <div className={styles.container2}>
 
+            <div className={styles.trojuhelnik1}></div>
+            <div className={styles.trojuhelnik2}></div>
+            <div className={styles.trojuhelnik3}></div>
+            <div className={styles.trojuhelnikLogo}>Logo</div>
+
             <div className={styles.menu}>
                 <Link href="/"  className={styles.logo2}>Logo/Název</Link>
                 <Image src={menuLogo} alt="" className={styles.img} 
@@ -45,7 +56,7 @@ const Navbar = () => {
 
             <div className={`${showMenu ? styles.show : styles.hide}`}>
                 <div className={styles.links2}>
-                    <Link href="/prihlaseni" className={styles.prihlaseni2}>Příhlášení</Link>
+                    <Link href="/dashboard/prihlaseni" className={styles.prihlaseni2}>Příhlášení</Link>
                     <Link href="/">Home</Link>
                     <Link href="/pro-firmy">Pro firmy</Link>
                     <Link href="/o-nas">O nás</Link>
