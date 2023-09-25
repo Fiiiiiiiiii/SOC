@@ -27,7 +27,7 @@
   width: 600px;
   height: 160px;
   transform: skew(-20deg);
-  background-color: rgba(54, 54, 54, 0.5);
+  background-color: rgba(20, 20, 20, 0.8);
   transition: 0.3s ease-out;
 }
 
@@ -51,7 +51,7 @@
   
   /*animace*/
   /*vysvětlení: background je na 200%, takže tam narvu 2 barvy pomocí linear-gradient a rozdělím to na 50% a 50%. Když na to najedu tak se to posune do leva a ta transition je tam, aby to bylo plynulý*/
-  background: linear-gradient(to left, rgba(54, 54, 54, 0.5) 51%, rgba(0, 255, 255, 0.8) 49%) right;
+  background: linear-gradient(to left, rgba(20, 20, 20, 0.8) 51%, rgba(0, 255, 255, 0.8) 49%) right;
   background-size: 205%;
   
   transition: 0.3s ease-out; /*tady to slouží při změnšení pod 950px, 750px ...*/
