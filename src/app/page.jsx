@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Pocitac from "public/Pocitac3.jpg"
-import backGround from "public/background5.jpg"
+import background from "public/background.png"
 import Link from 'next/link'
 import Button from "@/components/Button/Button"
 import Button2 from "@/components/Button2/Button2"
@@ -35,7 +35,7 @@ export default function Home() {
 
         </div>
 
-        <Image src={backGround} alt="" className={styles.backGround}/>
+        <Image src={background} alt="" className={styles.background}/>
 
         {/* <div className={styles.nadAnimace}>
             <div className={styles.animace}>

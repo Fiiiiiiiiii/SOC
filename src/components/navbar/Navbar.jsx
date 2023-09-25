@@ -8,6 +8,9 @@ import user from "public/User.png"
 import Image from 'next/image'
 import { useState } from "react"
 
+import Button from "@/components/Button3/Button3"
+
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
 
@@ -32,7 +35,7 @@ const Navbar = () => {
             </div>
 
             <div className={styles.mainPrihlaseni}>
-                <Link href="/dashboard/prihlaseni" className={styles.prihlaseni}>Příhlášení</Link>
+                <Button url="/dashboard/prihlaseni" text="Přihlášení"/>
                 <Link href="/dashboard/prihlaseni" className={styles.user}>
                   <Image src={user} alt="" className={styles.userImg}/>
                 </Link>
@@ -56,7 +59,7 @@ const Navbar = () => {
 
             <div className={`${showMenu ? styles.show : styles.hide}`}>
                 <div className={styles.links2}>
-                    <Link href="/dashboard/prihlaseni" className={styles.prihlaseni2}>Příhlášení</Link>
+                    <Link href="/dashboard/prihlaseni" className={styles.prihlaseni2}>Přihlášení</Link>
                     <Link href="/">Home</Link>
                     <Link href="/pro-firmy">Pro firmy</Link>
                     <Link href="/o-nas">O nás</Link>
