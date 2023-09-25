@@ -8,7 +8,7 @@
 /*---Úvod---*/
 
 .uvod {
-  position: absolute;
+  /* position: absolute; */
   height: 100vh;
   width: 85vw;
   display: flex;
@@ -231,7 +231,7 @@
 @media (max-width: 950px) {
   
   .uvod {
-    position: absolute;
+    /* position: absolute; */
     height: 750px;
   }
   

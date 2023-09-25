@@ -34,12 +34,12 @@ export default function Home() {
 
         </div>
 
-        <div className={styles.nadAnimace}>
+        {/* <div className={styles.nadAnimace}>
             <div className={styles.animace}>
                 <CanvasHeader/>
                 <Canvas/>
             </div>
-        </div>
+        </div> */}
 
         <div className={styles.section}>
 
