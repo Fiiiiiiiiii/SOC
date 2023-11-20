@@ -3,8 +3,12 @@ import styles from "./page.module.css"
 
 
 const proFirmy = () => {
-  return (
-    <div>nn</div>
+  return ( 
+    <div>
+    
+      <div className={styles.container}>nn</div>
+
+    </div>
   )
 }
 

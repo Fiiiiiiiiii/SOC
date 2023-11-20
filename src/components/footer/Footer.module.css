@@ -1,4 +1,4 @@
-.container {
+.containerx {
     height: 300px;
     display: flex;
     flex-direction: row;
@@ -78,7 +78,7 @@
 }
 
 @media (max-width: 1000px) {
-    .container {
+    .containerx {
         height: 450px;
     }
 
@@ -141,7 +141,7 @@
 }
 
 @media (max-width: 600px) {
-    .container {
+    .containerx {
         height: 700px;
     }
 
